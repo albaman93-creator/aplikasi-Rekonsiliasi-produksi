@@ -1,4 +1,4 @@
-const CACHE_NAME = "laporan-produksi-v1";
+const CACHE_NAME = "laporan-produksi-v2";
 const urlsToCache = [
   "./",
   "./index.html",
@@ -36,4 +36,5 @@ self.addEventListener('activate', (event) => {
       );
     })
   );
+
 });
