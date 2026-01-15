@@ -357,7 +357,7 @@
                     <td class="label-cell">FB Film</td>
                     <td><input type="number" id="k_film_a" class="nav-input trigger-kem"></td>
                     <td class="bg-grey"><input type="text" id="k_film_b1" readonly></td><td class="bg-grey"><input type="text" id="k_film_b2" readonly></td><td class="bg-grey"><input type="text" id="k_film_b3" readonly></td>
-                    <td class="bg-grey"><input type="text" id="k_film_c1" readonly></td><td class="bg-grey"><input type="text" id="k_film_c2" readonly></td><td class="bg-grey"><input type="text" id="k_film_c3" readonly></td>
+                    <td class="bg-grey"><input type="text" id="k_film_c1" readonly></td><td class="bg-grey"><input type="text" id="k_film_c2" readonly></td><td class="bg-grey"><td><input type="number" id="k_film_c3" class="nav-input trigger-kem"></td>
                     <td><input type="number" id="k_film_f" class="nav-input trigger-kem"></td><td class="bg-grey"><input type="text" id="k_film_d" readonly></td><td><input type="number" id="k_film_e" class="nav-input trigger-kem"></td><td class="bg-grey"><input type="text" id="k_film_diff" readonly></td>
                 </tr>
                 <tr>
@@ -541,7 +541,7 @@
 
     // --- 4. LOGIC: KEMASAN PRIMER ---
     function calcKemasan() {
-        ['b1','b2','b3','c1','c2','c3'].forEach(s => {
+        ['b1','b2','b3','c1','c2'].forEach(s => {
             setVal(`k_film_${s}`, getVal(`k_port_${s}`) * 0.142, 3);
         });
 
@@ -647,4 +647,5 @@
 </body>
 
 </html>
+
 
